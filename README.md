@@ -1,5 +1,7 @@
-ClubbedToDeath
+ClubbedToDeath Revision 2
 ==============
-** The code is released as a NetBeans project **
+** This code is released as a NetBeans project **
 
-A irc logging bot coded in java based off of http://www.jibble.org/logbot/
+A tiny cross-platform irc logging bot coded in java based off of http://www.jibble.org/logbot/
+
+Was originally made for personal use to be ran on an RPI 
