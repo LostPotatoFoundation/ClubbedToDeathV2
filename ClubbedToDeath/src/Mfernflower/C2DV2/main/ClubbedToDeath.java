@@ -1,8 +1,12 @@
-package C2D.LogBot.main;
+package Mfernflower.C2DV2.main;
+
+// TODO: FIX IMPORTS
+
 import java.io.*;
 import java.util.*;
 
 public class ClubbedToDeath {
+    public final static String ver = "v 1.0";
     public static void main(String[] args) throws Exception {
         Properties p = new Properties();
         try {
@@ -12,7 +16,8 @@ public class ClubbedToDeath {
     {
     System.out.println("Config file not found. Generating one and exiting");
             try (PrintWriter writer = new PrintWriter("./config.ini", "UTF-8")) {
-                writer.println("# Clubbed To Death v1.0 - IRC Logging Bot - Based off of http://www.jibble.org/logbot/");
+                writer.println("# Clubbed To Death Revision 2 - IRC Logging Bot - Based off of http://www.jibble.org/logbot/");
+                writer.println("# https://github.com/MFernflower/C2D-V2");
                 writer.println("Server = localhost");
                 writer.println("Channel = #test");
                 writer.println("Nick = LogBot");
@@ -33,7 +38,7 @@ public class ClubbedToDeath {
             System.out.println("Cannot make output directory (" + outDir + ")");
             System.exit(1);
         }
-        System.out.println("Clubbed To Death v1.0"); 
+        System.out.println("Clubbed To Death Revision 2 - Version " + ver ); 
         LogBot bot = new LogBot(nick, outDir, loginName, realName);
         bot.connect(server);
         bot.joinChannel(channel);

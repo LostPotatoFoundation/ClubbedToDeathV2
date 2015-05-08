@@ -1,4 +1,6 @@
-package C2D.LogBot.main;
+package Mfernflower.C2DV2.main;
+
+// TODO: FIX IMPORTS
 
 import java.util.*;
 import java.util.regex.*;
@@ -51,7 +53,7 @@ public class LogBot extends PircBot {
     @Override
     public void onConnect()
     {
-    append("Clubbed To Death v1.0 - IRC Logging Bot - Based off of http://www.jibble.org/logbot/");  
+    append("Clubbed To Death Revision 2 - Version " + ClubbedToDeath.ver + " - IRC Logging Bot - Based off of http://www.jibble.org/logbot/");  
     }
    
     @Override 
@@ -116,7 +118,7 @@ public class LogBot extends PircBot {
     public void onKick(String channel, String kickerNick, String kickerLogin, String kickerHostname, String recipientNick, String reason) {
         append("* " + recipientNick + " was kicked from " + channel + " by " + kickerNick);
         if (recipientNick.equalsIgnoreCase(getNick())) {
-            System.out.println("Kicked From Channel \n");
+            System.out.println("**** KICKED FROM CHANNEL ***** \n");
             append("**** KICKED FROM CHANNEL *****");
            
     }

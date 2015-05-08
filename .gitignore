@@ -1,5 +1,1 @@
-# generic .gitignore for Java desktop applications
 *.class
-*.jar
-*.war
-*.ear
