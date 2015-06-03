@@ -6,4 +6,4 @@ A tiny cross-platform irc logging bot coded in java based off of http://www.jibb
 
 Was originally made for personal use to be ran on an RPI 
 
-Requires PIRCBOT.jar (Included) to run and compile
+Requires PIRCBOT.jar (Included) 
