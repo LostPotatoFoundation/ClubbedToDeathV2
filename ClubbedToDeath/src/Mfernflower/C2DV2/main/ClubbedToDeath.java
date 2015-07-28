@@ -1,12 +1,11 @@
 package Mfernflower.C2DV2.main;
 
 // TODO: FIX IMPORTS
-
 import java.io.*;
 import java.util.*;
 
 public class ClubbedToDeath {
-    public final static String ver = "v 1.0";
+    public final static String ver = "v 1.1 FINAL";
     public static void main(String[] args) throws Exception {
         Properties p = new Properties();
         try {
@@ -16,8 +15,9 @@ public class ClubbedToDeath {
     {
     System.out.println("Config file not found. Generating one and exiting");
             try (PrintWriter writer = new PrintWriter("./config.cfg", "UTF-8")) { // How to change to ASCII?????
-                writer.println("# Clubbed To Death Revision 2 - IRC Logging Bot - Based off of http://www.jibble.org/logbot/");
+                writer.println("# Clubbed To Death Version 2 - Based off of http://www.jibble.org/logbot/");
                 writer.println("# https://github.com/MFernflower/C2D-V2");
+                writer.println("# CONFIG FILE");
                 writer.println("Server = localhost");
                 writer.println("Channel = #test");
                 writer.println("Nick = LogBot");
