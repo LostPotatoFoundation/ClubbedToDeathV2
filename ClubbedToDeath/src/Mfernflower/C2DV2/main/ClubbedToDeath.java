@@ -15,7 +15,7 @@ public class ClubbedToDeath {
          catch(IOException e)
     {
     System.out.println("Config file not found. Generating one and exiting");
-            try (PrintWriter writer = new PrintWriter("./config.ini", "UTF-8")) {
+            try (PrintWriter writer = new PrintWriter("./config.cfg", "UTF-8")) { // How to change to ASCII?????
                 writer.println("# Clubbed To Death Revision 2 - IRC Logging Bot - Based off of http://www.jibble.org/logbot/");
                 writer.println("# https://github.com/MFernflower/C2D-V2");
                 writer.println("Server = localhost");
