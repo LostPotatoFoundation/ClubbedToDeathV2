@@ -12,7 +12,7 @@ public class ClubbedToDeath {
     public static void main(String[] args) throws Exception {
         Properties p = new Properties();
         try {
-        p.load(new FileInputStream(new File("./config.ini")));
+        p.load(new FileInputStream(new File("./config.cfg")));
         }
          catch(IOException e)
     {
