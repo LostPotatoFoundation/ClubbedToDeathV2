@@ -1,13 +1,18 @@
 package Mfernflower.C2DV2.main;
 
-// TODO: FIX IMPORTS
-
-import java.util.*;
-import java.util.regex.*;
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintStream;
 import java.text.SimpleDateFormat;
-import org.jibble.pircbot.*;
-// Please excuse the bodge code on the bottom
+import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.jibble.pircbot.Colors;
+import org.jibble.pircbot.IrcException;
+import org.jibble.pircbot.PircBot;
+
 public class LogBot extends PircBot {
 
     private static final Pattern urlPattern = Pattern.compile("(?i:\\b((http|https|ftp|irc)://[^\\s]+))");
