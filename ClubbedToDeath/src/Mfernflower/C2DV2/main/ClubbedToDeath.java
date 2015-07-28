@@ -1,8 +1,11 @@
 package Mfernflower.C2DV2.main;
 
-// TODO: FIX IMPORTS
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.util.Properties;
 
 public class ClubbedToDeath {
     public final static String ver = "v 1.1 FINAL";
