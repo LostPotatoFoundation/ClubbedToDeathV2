@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.util.Properties;
 
 public class ClubbedToDeath {
-    public final static String ver = "v 1.1 FINAL";
+    public final static String ver = "v 1.2 FINAL";
     public static void main(String[] args) throws Exception {
         Properties p = new Properties();
         try {
@@ -17,9 +17,9 @@ public class ClubbedToDeath {
          catch(IOException e)
     {
     System.out.println("Config file not found. Generating one and exiting");
-            try (PrintWriter writer = new PrintWriter("./config.cfg", "UTF-8")) { // How to change to ASCII?????
-                writer.println("# Clubbed To Death Version 2 - Based off of http://www.jibble.org/logbot/");
-                writer.println("# https://github.com/MFernflower/C2D-V2");
+            try (PrintWriter writer = new PrintWriter("./config.cfg", "UTF-8")) { 
+                writer.println("# Clubbed To Death 2 - Based off of http://www.jibble.org/logbot/");
+                writer.println("# https://github.com/LostPotatoFoundation/ClubbedToDeathV2/");
                 writer.println("# CONFIG FILE");
                 writer.println("Server = localhost");
                 writer.println("Channel = #test");
@@ -41,7 +41,7 @@ public class ClubbedToDeath {
             System.out.println("Cannot make output directory (" + outDir + ")");
             System.exit(1);
         }
-        System.out.println("Clubbed To Death Revision 2 - Version " + ver ); 
+        System.out.println("Clubbed To Death 2 - Version " + ver ); 
         LogBot bot = new LogBot(nick, outDir, loginName, realName);
         bot.connect(server);
         bot.joinChannel(channel);
