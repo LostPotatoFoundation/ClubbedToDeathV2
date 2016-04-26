@@ -27,7 +27,7 @@ public class ClubbedToDeath {
                 writer.println("LoginName = Walrus");
                 writer.println("RealName = Stegosarus");
             }
-    System.exit(1);
+        System.exit(2); // Return status when config is not found 
     }
         String server = p.getProperty("Server", "localhost");
         String channel = p.getProperty("Channel", "#test");
