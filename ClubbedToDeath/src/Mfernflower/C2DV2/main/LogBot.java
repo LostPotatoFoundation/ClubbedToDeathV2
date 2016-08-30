@@ -58,7 +58,7 @@ public class LogBot extends PircBot {
     @Override
     public void onConnect()
     {
-    append("Clubbed To Death Revision 2 - Version " + ClubbedToDeath.ver + " - IRC Logging Bot - Based off of http://www.jibble.org/logbot/");  
+    append("Clubbed To Death R2 FINAL - IRC Logging Bot - Based off of http://www.jibble.org/logbot/");  
     }
    
     @Override 
