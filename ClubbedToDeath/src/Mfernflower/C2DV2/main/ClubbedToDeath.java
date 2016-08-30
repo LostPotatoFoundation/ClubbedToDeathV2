@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.util.Properties;
 
 public class ClubbedToDeath {
-    public final static String ver = "v 1.2 FINAL";
+    public final static String ver = "FINAL";
     public static void main(String[] args) throws Exception {
         Properties p = new Properties();
         try {
@@ -39,7 +39,7 @@ public class ClubbedToDeath {
         outDir.mkdirs();
         if (!outDir.isDirectory()) {
             System.out.println("Cannot make output directory (" + outDir + ")");
-            System.exit(1);
+            System.exit(2);
         }
         System.out.println("Clubbed To Death 2 - Version " + ver ); 
         LogBot bot = new LogBot(nick, outDir, loginName, realName);
